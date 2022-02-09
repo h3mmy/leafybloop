@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Invoke deployment hook
         run: |
-          curl -X POST {{ secrets.CF_DEPLOY_HOOK }}
+          curl -X POST ${{ secrets.CF_DEPLOY_HOOK }}
