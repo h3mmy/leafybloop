@@ -1,7 +1,6 @@
 ---
-name: Deploy Keycloak Theme to GHCR
+name: Deploy LeafyBloop
 
-# Run workflow on tags starting with v (eg. v2, v1.2.0)
 on:
   workflow_dispatch:
   push:
@@ -17,4 +16,4 @@ jobs:
     steps:
       - name: Invoke deployment hook
         run: |
-          curl -X POST {{ secrets.CF_DEPLOY_WEBHOOK }}
+          curl -X POST {{ secrets.CF_DEPLOY_HOOK }}
