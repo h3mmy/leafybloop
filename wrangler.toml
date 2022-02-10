@@ -1,7 +1,5 @@
 name = "leafybloop"
 type = "webpack"
-route = ${CF_ROUTE}
-zone_id = ${CF_ZONE_ID}
 webpack_config = 'node_modules/flareact/webpack'
 usage_model = ''
 compatibility_flags = []
