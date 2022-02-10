@@ -1,0 +1,16 @@
+name = "leafybloop"
+type = "webpack"
+route = ${CF_ROUTE}
+zone_id = ${CF_ZONE_ID}
+webpack_config = 'node_modules/flareact/webpack'
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2022-02-10"
+
+[triggers]
+    crons = ["*/5 * * * *"]
+
+[site]
+    bucket = "./out"
+    entry-point = "./"
