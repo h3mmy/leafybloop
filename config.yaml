@@ -1,7 +1,7 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  url: 'https://status.bloopnet.dev/' # used for Slack messages
+  logo: logo.jpeg # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -32,8 +32,9 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: bloopnet-xyz
+    name: BloopNet External Access
+    url: 'https://bloopnet.xyz/'
     method: GET
     expectStatus: 200
+    followRedirect: true
