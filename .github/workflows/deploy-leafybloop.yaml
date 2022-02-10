@@ -3,9 +3,6 @@ name: Deploy LeafyBloop
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   Deploy:
