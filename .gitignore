@@ -3,7 +3,7 @@ dist
 public/
 
 #temporary
-wrangler.toml
+# wrangler.toml
 
 # dependencies
 node_modules/
