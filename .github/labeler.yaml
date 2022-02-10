@@ -1,0 +1,13 @@
+---
+area/pages:
+  - "pages/**/*"
+area/ci:
+  - ".github/**/*"
+area/public:
+  - "public/**/*"
+area/components:
+  - "src/components/**/*"
+area/cli:
+  - "src/cli/**/*"
+area/functions:
+  - "src/functions/**/*"
