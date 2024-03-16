@@ -33,9 +33,23 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
+  - id: rootcause-lmmj
+    name: RootCause
+    description: 'Epidemiology Blog's
+    url: 'https://lillianjensen.com'
+    linkable: true
+
   - id: bloopnet-xyz
     name: BloopNet External Access
     url: 'https://bloopnet.xyz/'
     method: GET
     expectStatus: 200
     followRedirect: true
+
+  - id: bloopnet-xyz-status
+    name: Status XYZ
+    description: 'Gatus Instance XYZ'
+    url: 'https://status.bloopnet.xyz'
+    method: GET
+    expectStatus: 200
+    linkable: true
